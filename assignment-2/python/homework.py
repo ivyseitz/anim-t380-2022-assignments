@@ -13,8 +13,8 @@ import os
 
 #Get Arguements
 parser = argparse.ArgumentParser(description='This program makes a bouncing ball animation')
-parser.add_argument('ballSize', help='The radius of the ball')
-parser.add_argument('startHeight', help='Starting height of bouncing ball')
+parser.add_argument('ballSize', type=int, help='The radius of the ball')
+parser.add_argument('startHeight', type=int, help='Starting height of bouncing ball')
 args = parser.parse_args()
 
 #Initialize Maya
