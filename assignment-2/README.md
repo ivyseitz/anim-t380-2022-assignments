@@ -13,4 +13,4 @@ Run  `mayapy homework.py 3 10` in command prompt. It should print out the follow
     Creating a bouncy ball...
     Saving to... D:\OneDrive - Drexel University\Files\Drexel\Classes\PipelineTD\anim-t380-2022-assignments\assignment-2\python
     
-A bouncing ball will be created in the maya scene, and saved in the same directory as the location of the python script, titled `sis47_as02.ma`.
+A bouncing ball will be created in the maya scene, and saved in the same directory as the location of the python script, titled `sis47_as02.ma`. It will have a 3 unit radius ball, starting from height 10, bouncing a few times before stopping.
