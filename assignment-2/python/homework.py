@@ -10,11 +10,19 @@ import maya.standalone
 maya.standalone.initialize()
 
 #Import
-import maya.cmds
+import maya.cmds as cmds
 import argparse
+import os
 
+#Maya file
 print("Creating a cube...")
 maya.cmds.polyCube()
 print(maya.cmds.ls(geometry=True))
 
-#Save Maya file
+
+#Save a Maya file to python script directory
+savePath= os.getcwd()
+print("Saving to...", savePath)
+saveFile = savePath + '\\sis47_as02.ma'
+cmds.file(rename=saveFile)
+cmds.file(save=True, type="mayaAscii")
